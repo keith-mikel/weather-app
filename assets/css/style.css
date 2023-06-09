@@ -1,13 +1,4 @@
-div {
-    display: block;
-    margin: 50px;
-}
-
-#searchHistory {
-    display: flex;
-    flex-direction: column;
-}
-
-#searchHistory button {
-    margin: 5px;
+.city-button:hover {
+  color: lightblue;
+  border-color: black;
 }
