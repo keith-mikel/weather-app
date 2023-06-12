@@ -119,7 +119,7 @@ function fetchWeather(cityName) {
                       .unix(data.list[i].dt)
                       .format('MMMM, D');
                       // variables to iterate for each give data snippet
-                    var temperature = data.list[i].main.temp;
+                    var temperature = (Math.round(data.list[i].main.temp));
                     var weatherDescription =
                       data.list[i].weather[0].description;
                     var weatherIcon = data.list[i].weather[0].icon;
