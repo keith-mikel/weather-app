@@ -10,25 +10,30 @@
     <title>Weather App</title>
 </head>
 <body>
+    <!-- Header weather for page -->
     <header>
         <h1 class="Header text-center display-1 card">Weather App</h1>
     </header>
+    <!-- search box and submit button -->
     <div class="container">
-        <div class="row text-center">
-            <div class="col-md-4">
+        <div class="row text-center align-items-center">
+            <div class="col-md-4 d-flex flex-column">
                 <input class="form-control" type="text" id="cityInput" placeholder="Enter a city">
-                <button class="btn btn-secondary" id="searchButton">Get Weather!</button>
+                <button class="btn btn-primary" id="searchButton">Get Weather!</button>
             </div>
+            <!-- current weather section -->
             <div class="col-md-8">
                 <h2>Current Weather</h2>
                 <div class="text-center" id="currentContainer"><!-- Current weather content goes here --></div>
             </div>
         </div>
+        <!-- search history section -->
         <div class="row text-center">
             <div class="col-md-4">
                 <h2>Search History</h2>
                 <div class="text-center" id="searchHistory"></div>
             </div>
+            <!-- five day forecast section -->
             <div class="col-md-8">
             <h2>Five Day Forecast</h2>
             <div class="d-flex" id="fiveDayContainer"><!-- 5 day weather content goes here --></div>

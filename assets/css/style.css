@@ -1,4 +1,10 @@
+
+
+header {
+  padding-bottom: 30px;
+}
 .city-button:hover {
   color: lightblue;
   border-color: black;
 }
+
