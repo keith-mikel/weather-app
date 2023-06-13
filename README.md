@@ -11,7 +11,7 @@ https://keith-mikel.github.io/weather-app/index
 
 ## Installation
 
-Use SSH github link in order to install this project ssh to install Keith's Project Portfolio.
+Use SSH github link in order to install this project ssh to install Weather App.
 
 ```bash
 clone git@github.com:keith-mikel/weather-app.git

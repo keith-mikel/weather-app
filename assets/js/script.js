@@ -80,7 +80,7 @@ function fetchWeather(cityName) {
           weatherIconElement.classList.add('mx-auto', 'd-block');
 
           var windSpeedElement = document.createElement('p');
-          windSpeedElement.textContent = 'Wind Speed: ' + windSpeed;
+          windSpeedElement.textContent = 'Wind Speed: ' + windSpeed +' mph';
 
           var humidityElement = document.createElement('p');
           humidityElement.textContent = 'Humidity: ' + humidity + '%';
@@ -153,7 +153,7 @@ function fetchWeather(cityName) {
                     weatherIconElement.classList.add('mx-auto', 'd-block');
 
                     var windSpeedElement = document.createElement('p');
-                    windSpeedElement.textContent = 'Wind Speed: ' + windSpeed;
+                    windSpeedElement.textContent = 'Wind Speed: ' + windSpeed+' mph';
 
                     var humidityElement = document.createElement('p');
                     humidityElement.textContent = 'Humidity: ' + humidity + '%';
