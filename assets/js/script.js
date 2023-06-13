@@ -45,7 +45,7 @@ function fetchWeather(cityName) {
           var cityLon = data.coord.lon;
           var cityDisplay = data.name;
           var formattedDate = dayjs.unix(data.dt).format('dddd, MMMM D');
-          var currentWeatherid = data.main.temp;
+          var currentWeatherid = (Math.round(data.main.temp));
           var weatherDescription = data.weather[0].description;
           var weatherIcon = data.weather[0].icon;
           var windSpeed = data.wind.speed;
@@ -67,7 +67,7 @@ function fetchWeather(cityName) {
 
           var temperatureElement = document.createElement('p');
           temperatureElement.textContent =
-            'Current Temperature: ' + currentWeatherid;
+            'Current Temperature: ' + currentWeatherid+ '°F';
 
           var weatherDescriptionElement = document.createElement('p');
           weatherDescriptionElement.textContent = weatherDescription;
@@ -136,7 +136,7 @@ function fetchWeather(cityName) {
 
                     var temperatureElement = document.createElement('p');
                     temperatureElement.textContent =
-                      'Temperature: ' + temperature;
+                      'Temperature: ' + temperature + '°F';
 
                     var weatherDescriptionElement =
                       document.createElement('p');
